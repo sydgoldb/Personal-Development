@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package EventHandling;
+import javax.swing.JFrame;
 
 /**
  *
@@ -13,5 +14,12 @@ package EventHandling;
 // event is what the user does (e.g., clicking a button)
 // handling is what the developer does in response with the code.
 public class apples {
+    public static void main(String[] args) {
+        
+        tuna bucky = new tuna();
+        bucky.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        bucky.setSize(350, 100);
+        bucky.setVisible(true);
+    }
     
 }

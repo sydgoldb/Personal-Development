@@ -47,6 +47,7 @@ public class tuna extends JFrame {
         // We want the text fields to "listen"/wait for an event to happen. When that happens I want you to execute certain code.
         thehandler handler = new thehandler();
         // builds actionListener object
+        // actionListener takes in an object because "actionPerformed" like "thehandler" can have more than one event.
         item1.addActionListener(handler);
         item2.addActionListener(handler);
         item3.addActionListener(handler);
@@ -71,6 +72,8 @@ public class tuna extends JFrame {
                 string = String.format("field 3: %s", e.getActionCommand());
             } else if (e.getSource() == passwordField) {
                 string = String.format("password field is: %s", e.getActionCommand());
+
+                JOptionPane.showMessageDialog(null, string);
             }
         }
     }
